@@ -334,11 +334,14 @@ nav{
     a{
         margin: 10px;
         font-size: 20px;
-        /* border-top: 1px solid black;
-        border-bottom: 1px solid black; attempt at getting the lines in the nav*/
+        border-bottom: 1px solid black; /*attempt at getting the lines in the nav, i think it worked :)*/
         text-align: center;
+        padding-bottom: 15px;
 
-
+    }
+    .top-border{
+        border-top: 1px solid black;
+        padding-top: 15px;
     }
     .features{
         width: 100%;
