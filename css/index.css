@@ -71,23 +71,18 @@ body {
   }
 .container {
 	  
-	background-color: lightgrey;
+	
     /* border: 1px solid red; */
   	display: flex;
     justify-content: space-evenly;
 }
 .services-container{	
-	padding:10px;
+	padding: 10px;
 
 }
-
-  header nav a {
-	  /* TB LR*/
-	 
-
-	 /* border: 1px solid blue; */
-	
-  }
+header a{
+    text-decoration: none;
+}
   header nav {
     display: flex;
     
@@ -109,19 +104,21 @@ body {
 	  
   }
   .innovation-div{
-	  	width: 100%;
-		display: flex;
-		/*border: 1px solid red;*/
-		display: flex;
-    justify-content: space-around;
+	width: 100%;
+	display: flex;
+	/*border: 1px solid red;*/
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     margin-top: 20px;
 		
   }
   .innovation-text{
 	  /* border: solid 1px blue; */
 	  padding: 10px;
-    display: flex;
-    flex-direction: column;
+      display: flex;
+      flex-direction: column;
+    
   }
  
   .button {
@@ -320,15 +317,15 @@ nav{
     }
 
     .about{
-        margin-top: 15px;
+        margin-top: 50px;
         width: 100%;
     }
     .product{
-        margin-top: 15px;
+        margin-top: 50px;
         width: 100%;
     }
     .vision {
-        margin-top: 15px;
+        margin-top: 50px;
         width: 100%;
     }
     a{
@@ -345,9 +342,13 @@ nav{
     }
     .features{
         width: 100%;
+        margin-top: 20px;
     }
     .services{
         width: 100%;
+        
     }
-    
+    .innovation-text{
+        margin-bottom: 50px;
+    }
 }
