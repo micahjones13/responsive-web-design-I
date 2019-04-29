@@ -250,11 +250,31 @@ a{
 	color: gray;
 }
 
+
 @media(max-width:800px){
 .container{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-flow: column-reverse wrap;
+    background: white;
+    align-items: center;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    margin: 0px;
+}
+.codesnippet{
+    display: none;
+}
+.contact{
+    padding: 5px;
+    margin-top: 20px;
+}
+nav{
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 
@@ -263,20 +283,23 @@ a{
 }
 @media(max-width:500px){
     .container{
-        background: pink;
+        background: white;
         display: flex;
         flex-direction: column-reverse;
         align-content: center;
     }
-    header nav{
+     nav{
         display: flex;
         flex-direction: column;
         align-self: center;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
+        margin-top: 0px;
+        padding: 10px;
+        width: 100%;
 
     }
     .codesnippet{
-        display :none;
+        display: none;
     }
     .main-content{
         display: flex;
@@ -295,9 +318,7 @@ a{
         flex-direction: column;
         align-items: center;
     }
-    .contact{
-        margin-left: 20px;
-    }
+
     .about{
         margin-top: 15px;
         width: 100%;
@@ -312,7 +333,11 @@ a{
     }
     a{
         margin: 10px;
-        font-size: 25px;
+        font-size: 20px;
+        /* border-top: 1px solid black;
+        border-bottom: 1px solid black; attempt at getting the lines in the nav*/
+        text-align: center;
+
 
     }
     .features{
@@ -321,4 +346,5 @@ a{
     .services{
         width: 100%;
     }
+    
 }
