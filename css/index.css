@@ -1,3 +1,254 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+	width: 1200px;
+	margin: auto; /* this helps the big monitor problem*/
+  }
+  
+  .container {
+	  
+		background-color: lightgrey;
+		/* border: 1px solid red; */
+		display: flex;
+		justify-content: space-evenly;
+		}
+	.services-container{
+		padding:10px;
+	}
+
+  header nav a {
+	  /* TB LR*/
+	  margin:;
+
+	 /* border: 1px solid blue; */
+	
+  }
+  header nav {
+    display: flex;
+    
+	              /* CHANGED */
+  }
+  header .logo {
+	  /*margin-left: 760px;*/
+    display: flex;
+    align-items: center;
+  }
+  .codesnippet {
+	/*border: 1px solid blue;*/
+	  margin-bottom: 40px;
+  
+  }
+  .cta h1{
+	  font-size: 70px;
+	  text-align: center;
+	  
+  }
+  .innovation-div{
+	  	width: 100%;
+		display: flex;
+		/*border: 1px solid red;*/
+		display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+		
+  }
+  .innovation-text{
+	  /* border: solid 1px blue; */
+	  padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .button {
+	  margin-left: 70px;
+  }
+
+.main-button {
+  width: 145px;
+  height: 30px;
+}
+
+  .features{
+	  width: 49%;
+	  
+	  /*border: 2px solid red;*/
+  }
+  .about{
+	  width: 49%;
+	  
+	  /*border: 2px solid red;*/
+  }
+  .features-about-container{
+	  display:flex;
+	  justify-content: space-between;
+	  padding: 15px;
+  }
+  .services{
+	  width: 32%;
+	  
+	
+	  /*border: 2px solid red;*/
+  }
+  .product{
+	  width: 32%;
+	  /*border: 2px solid red;*/
+	  margin: 2px;
+  }
+  .vision{
+	  width: 32%;
+	 /* border: 2px solid red;*/
+  }
+  .middle-img{
+	  padding: 10px;
+	  width: 100%;
+  }
+  .below-img-info{
+	  display: flex;
+	  justify-content: space-between;
+	  padding: 15px;
+  }
+  footer{
+	display: flex;
+	justify-content: center;
+ 	margin-top: 100px;
+  }
+  .contact {
+	  text-align: left;
+  }
+  .contact p{
+	font-size: 15px;
+  }
+  address{
+	font-size: 15px;
+  }
+  .services-container{
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-start;
+  }
+  .services-header-img{
+		width: 100%;
+		padding: 10px;
+  }
+ .service-header-text{
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 20px;
+  }	
+  .service-para{
+	  padding:10px;
+	  margin-bottom: 20px;
+  }
+  .main-container{
+	  /*border: 1px solid red;*/
+	  padding: 10px;
+	  display: flex;
+	  flex-flow: row wrap;
+	  justify-content: space-around;
+
+  }
+  .child{
+	  border: 1px solid black;
+	  width: 400px;
+	  height: 285px;
+	  background-color: lightgray;
+	  padding: 15px;
+	  margin-bottom: 40px;
+  }
+ button{                      /* BUTTON from Services interfering!! */
+	
+ }
+ .service-facts-container{
+	 padding: 10px;
+	 display: flex;
+	 justify-content: space-between;
+ }	  
+.child2{
+	/*border: 1px solid red;*/
+	margin-left: 70px;
+	width: 500px;
+}
+.box1{
+	padding: 15px;
+}
+ul{
+	margin-top: 20px;
+	list-style-type: disk;
+	list-style-position: inside;
+}
+.nav{
+	/*border: 1px solid red;*/
+	display:flex;
+	justify-content: space-between;
+}
+
+a{
+	margin: 40px;
+	color: gray;
+}
 
