@@ -1,3 +1,354 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+	max-width: 1200px;
+	margin: auto; /* this helps the big monitor problem*/
+  }
+.container {
+	  
+	
+    /* border: 1px solid red; */
+  	display: flex;
+    justify-content: space-evenly;
+}
+.services-container{	
+	padding: 10px;
+
+}
+header a{
+    text-decoration: none;
+}
+  header nav {
+    display: flex;
+    
+	              /* CHANGED */
+  }
+  header .logo {
+	  /*margin-left: 760px;*/
+    display: flex;
+    align-items: center;
+  }
+  .codesnippet {
+	/*border: 1px solid blue;*/
+	  margin-bottom: 40px;
+  
+  }
+  .cta h1{
+	  font-size: 70px;
+	  text-align: center;
+	  
+  }
+  .innovation-div{
+	width: 100%;
+	display: flex;
+	/*border: 1px solid red;*/
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+		
+  }
+  .innovation-text{
+	  /* border: solid 1px blue; */
+	  padding: 10px;
+      display: flex;
+      flex-direction: column;
+    
+  }
+ 
+  .button {
+	  margin-left: 70px;
+  }
+
+.main-button {
+  width: 145px;
+  height: 30px;
+}
+
+  .features{
+	  width: 49%;
+	  
+	  /*border: 2px solid red;*/
+  }
+  .about{
+	  width: 49%;
+	  
+	  /*border: 2px solid red;*/
+  }
+  .features-about-container{
+	  display:flex;
+	  justify-content: space-between;
+	  padding: 15px;
+  }
+  .services{
+	  width: 32%;
+	  
+	
+	  /*border: 2px solid red;*/
+  }
+  .product{
+	  width: 32%;
+	  /*border: 2px solid red;*/
+	  margin: 2px;
+  }
+  .vision{
+	  width: 32%;
+	 /* border: 2px solid red;*/
+  }
+  .middle-img{
+	  padding: 10px;
+	  width: 100%;
+  }
+  .below-img-info{
+	  display: flex;
+	  justify-content: space-between;
+	  padding: 15px;
+  }
+  footer{
+	display: flex;
+	justify-content: center;
+ 	margin-top: 100px;
+  }
+  .contact {
+	  text-align: left;
+  }
+  .contact p{
+	font-size: 15px;
+  }
+  address{
+	font-size: 15px;
+  }
+  .services-container{
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-start;
+  }
+  .services-header-img{
+		width: 100%;
+		padding: 10px;
+  }
+ .service-header-text{
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 20px;
+  }	
+  .service-para{
+	  padding:10px;
+	  margin-bottom: 20px;
+  }
+  .main-container{
+	  /*border: 1px solid red;*/
+	  padding: 10px;
+	  display: flex;
+	  flex-flow: row wrap;
+	  justify-content: space-around;
+
+  }
+  .child{
+	  border: 1px solid black;
+	  width: 400px;
+	  height: 285px;
+	  background-color: lightgray;
+	  padding: 15px;
+	  margin-bottom: 40px;
+  }
+ 
+ .service-facts-container{
+	 padding: 10px;
+	 display: flex;
+	 justify-content: space-between;
+ }	  
+.child2{
+	/*border: 1px solid red;*/
+	margin-left: 70px;
+	width: 500px;
+}
+.box1{
+	padding: 15px;
+}
+ul{
+	margin-top: 20px;
+	list-style-type: disk;
+	list-style-position: inside;
+}
+.nav{
+	/*border: 1px solid red;*/
+	display:flex;
+	justify-content: space-between;
+}
+
+a{
+	margin: 40px;
+	color: gray;
+}
 
 
+@media(max-width:800px){
+.container{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: column-reverse wrap;
+    background: white;
+    align-items: center;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    margin: 0px;
+}
+.codesnippet{
+    display: none;
+}
+.contact{
+    padding: 5px;
+    margin-top: 20px;
+}
+nav{
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+
+
+}
+@media(max-width:500px){
+    .container{
+        background: white;
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+     nav{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        /* border: 1px solid blue; */
+        margin-top: 0px;
+        padding: 10px;
+        width: 100%;
+
+    }
+    .codesnippet{
+        display: none;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .features-about-container{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        align-items: center;
+    }
+    .below-img-info{
+        display: flex;
+        padding: 15px; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .product{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .vision {
+        margin-top: 50px;
+        width: 100%;
+    }
+    a{
+        margin: 10px;
+        font-size: 20px;
+        border-bottom: 1px solid black; /*attempt at getting the lines in the nav, i think it worked :)*/
+        text-align: center;
+        padding-bottom: 15px;
+
+    }
+    .top-border{
+        border-top: 1px solid black;
+        padding-top: 15px;
+    }
+    .features{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .services{
+        width: 100%;
+        
+    }
+    .innovation-text{
+        margin-bottom: 50px;
+    }
+}
