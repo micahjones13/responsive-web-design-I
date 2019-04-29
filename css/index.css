@@ -66,24 +66,24 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 body {
-	width: 1200px;
+	max-width: 1200px;
 	margin: auto; /* this helps the big monitor problem*/
   }
-  
-  .container {
+.container {
 	  
-		background-color: lightgrey;
-		/* border: 1px solid red; */
-		display: flex;
-		justify-content: space-evenly;
-		}
-	.services-container{
-		padding:10px;
-	}
+	background-color: lightgrey;
+    /* border: 1px solid red; */
+  	display: flex;
+    justify-content: space-evenly;
+}
+.services-container{	
+	padding:10px;
+
+}
 
   header nav a {
 	  /* TB LR*/
-	  margin:;
+	 
 
 	 /* border: 1px solid blue; */
 	
@@ -220,9 +220,7 @@ body {
 	  padding: 15px;
 	  margin-bottom: 40px;
   }
- button{                      /* BUTTON from Services interfering!! */
-	
- }
+ 
  .service-facts-container{
 	 padding: 10px;
 	 display: flex;
@@ -252,3 +250,75 @@ a{
 	color: gray;
 }
 
+@media(max-width:800px){
+.container{
+    border: 1px solid red;
+    display: flex;
+    flex-flow: column-reverse wrap;
+}
+
+
+
+
+}
+@media(max-width:500px){
+    .container{
+        background: pink;
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        border: 1px solid blue;
+
+    }
+    .codesnippet{
+        display :none;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .features-about-container{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        align-items: center;
+    }
+    .below-img-info{
+        display: flex;
+        padding: 15px; 
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact{
+        margin-left: 20px;
+    }
+    .about{
+        margin-top: 15px;
+        width: 100%;
+    }
+    .product{
+        margin-top: 15px;
+        width: 100%;
+    }
+    .vision {
+        margin-top: 15px;
+        width: 100%;
+    }
+    a{
+        margin: 10px;
+        font-size: 25px;
+
+    }
+    .features{
+        width: 100%;
+    }
+    .services{
+        width: 100%;
+    }
+}
